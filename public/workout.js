@@ -44,6 +44,14 @@ function formatDate(date) {
   return new Date(date).toLocaleDateString(options);
 }
 
+function totalWorkout(workout) {
+  let total = 0;                                    // check to see if this is needed
+  workout.exercises.forEach((exercise) => {
+    total += exercise.duration;
+  })
+  return total;
+}
+
 function renderWorkoutSummary(summary) {
   const container = document.querySelector(".workout-stats");
 
