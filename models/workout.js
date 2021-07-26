@@ -39,14 +39,3 @@ const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
 
-
-// exercises: [
-//     {
-//       type: 'resistance',
-//       name: 'Bicep Curl',
-//       duration: 20,
-//       weight: 100,
-//       reps: 10,
-//       sets: 4,
-//     },
-//   ],
